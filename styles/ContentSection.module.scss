@@ -53,3 +53,36 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        margin-top: -64px;
+    }
+
+    .heading {
+        margin-top: 264px;
+    }
+
+    .box {
+        transform: scale(0.8) rotate(-5deg);
+    }
+
+    .contentBox {
+        max-width: 100%;
+        margin-top: -8px;
+    }
+
+    .alt {
+        flex-direction: column;
+        margin-top: -24px;
+
+        .heading {
+            margin-top: -72px;
+        }
+
+        .contentBox {
+            margin-top: -48px;
+        }
+    }
+}

@@ -31,3 +31,9 @@
     margin: auto;
     padding: 16px;
 }
+
+@media only screen and (max-width: 800px) {
+    .belowFold {
+        padding-top: 48px;
+    }
+}
