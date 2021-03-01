@@ -1,65 +1,39 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import ContentSection from 'components/ContentSection';
+import LinkIcon from 'components/LinkIcon';
+import styles from 'styles/Home.module.scss';
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+const Home = () => (
+    <>
+        <Head>
+            <title>Hi - Robert Lai - Software Engineer</title>
+        </Head>
+        <section className={styles.aboveFold}>
+            <h1 className={styles.name}>Robert Lai</h1>
+            <p className={styles.intro}>Hi. I like to build things and have fun.</p>
+            <nav className={styles.nav}>
+                <LinkIcon href="https://www.linkedin.com/in/rcylai/" src="linkedin.svg" alt="LinkedIn logo" />
+                <LinkIcon href="https://github.com/robertlai" src="github.svg" alt="GitHub logo" />
+                <LinkIcon href="mailto:rcylai@hotmail.com" src="email.svg" alt="Email icon" />
+            </nav>
+        </section>
+        <div className={styles.belowFold}>
+            <ContentSection title="About me" imageSrc="my_face.png" imageAltText="Robert Lai, smiling in front of mountains in Banff, Alberta" alt>
+                <p>Hi. I'm Robert Lai, a software engineer and curious person.</p>
+                <p>I like to build things using code, especially interfaces for humans.</p>
+                <p>When I'm not working, I enjoy anime, games, drawing, and appreciating nature.</p>
+            </ContentSection>
+            <ContentSection title="Work" imageSrc="yelp_cookies.png" imageAltText="A dozen cookies shaped like the Yelp burst in a cardboard box">
+                <p>I currently work for Yelp, where I build features and conduct experiments to deliver tailored experiences to users.</p>
+                <p>I previously interned at Yelp, Meraki, and AdRoll, among others.</p>
+                {/* <p>See my full work history here.</p> */}
+            </ContentSection>
+            {/*
+            <ContentSection title="Contact" imageSrc="" imageAltText="" alt>
+            </ContentSection>
+            */}
         </div>
-      </main>
+    </>
+);
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
-}
+export default Home;

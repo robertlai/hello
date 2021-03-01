@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto&display=swap');
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(190deg, #ffccaa, #ffaacc, #ccaaff, #aaccff, #aaffcc, #ccffaa);
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 4px 4px #bbbbff;
+}
+
+p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.333;
+    margin-bottom: 18px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,8 @@
+.icon {
+    transition: 0.2s;
+
+    &:hover, &:focus {
+        outline: none;
+        transform: scale(1.25);
+    }
+}
