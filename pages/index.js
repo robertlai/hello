@@ -7,6 +7,12 @@ const Home = () => (
     <>
         <Head>
             <title>Hi - Robert Lai - Software Engineer</title>
+            <meta
+                name="description"
+                content="Hi. I'm Robert Lai, a software engineer and curious person.
+                    I like to build things using code, especially interfaces for humans.
+                    When I'm not working, I enjoy anime, games, drawing, and appreciating nature."
+            />
         </Head>
         <section className={styles.aboveFold}>
             <h1 className={styles.name}>Robert Lai</h1>
