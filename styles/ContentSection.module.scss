@@ -1,23 +1,13 @@
 .container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-top: -92px;
     margin-bottom: 24px;
-    color: #8888bb;
-}
 
-.alt {
+    display: flex;
     flex-direction: row-reverse;
-    margin-top: 0;
-
-    .heading {
-        margin-top: -80px;
-    }
+    align-items: center;
 }
 
 .heading {
-    margin-top: 272px;
+    margin-top: -76px;
     color: #ffffff;
     font-size: 48px;
     text-align: center;
@@ -25,9 +15,9 @@
 
 .box {
     border-radius: 16px;
-    transform: scale(0.875) rotate(-10deg);
     background-color: #ffffff;
     box-shadow: 4px 4px #bbbbff;
+    transform: scale(0.875) rotate(-10deg);
 }
 
 .imageBox {
@@ -49,15 +39,25 @@
     height: 512px;
     width: 512px;
     padding: 32px;
+    color: #8888bb;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.alt {
+    margin-top: -90px;
+    flex-direction: row;
+
+    .heading {
+        margin-top: 272px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .container {
         flex-direction: column;
-        margin-top: -64px;
     }
 
     .heading {
@@ -70,11 +70,10 @@
 
     .contentBox {
         max-width: 100%;
-        margin-top: -8px;
+        margin-top: -12px;
     }
 
     .alt {
-        flex-direction: column;
         margin-top: -24px;
 
         .heading {
@@ -82,7 +81,8 @@
         }
 
         .contentBox {
-            margin-top: -48px;
+            margin-top: -56px;
+            margin-bottom: -70px;
         }
     }
 }

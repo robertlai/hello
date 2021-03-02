@@ -18,12 +18,12 @@ const Home = () => (
             </nav>
         </section>
         <div className={styles.belowFold}>
-            <ContentSection title="About me" imageSrc="my_face.png" imageAltText="Robert Lai, smiling in front of mountains in Banff, Alberta" alt>
+            <ContentSection title="About me" imageSrc="my_face.png" imageAltText="Robert Lai, smiling in front of mountains in Banff, Alberta">
                 <p>Hi. I'm Robert Lai, a software engineer and curious person.</p>
                 <p>I like to build things using code, especially interfaces for humans.</p>
                 <p>When I'm not working, I enjoy anime, games, drawing, and appreciating nature.</p>
             </ContentSection>
-            <ContentSection title="Work" imageSrc="yelp_cookies.png" imageAltText="A dozen cookies shaped like the Yelp burst in a cardboard box">
+            <ContentSection title="Work" imageSrc="yelp_cookies.png" imageAltText="A dozen cookies shaped like the Yelp burst in a cardboard box" alt>
                 <p>I currently work for Yelp, where I build features and conduct experiments to deliver tailored experiences to users.</p>
                 <p>I previously interned at Yelp, Meraki, and AdRoll, among others.</p>
                 {/* <p>See my full work history here.</p> */}
