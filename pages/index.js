@@ -20,7 +20,8 @@ const Home = () => (
             <nav className={styles.nav}>
                 <LinkIcon href="https://www.linkedin.com/in/rcylai/" src="linkedin.svg" alt="LinkedIn logo" />
                 <LinkIcon href="https://github.com/robertlai" src="github.svg" alt="GitHub logo" />
-                <LinkIcon href="mailto:rcylai@hotmail.com" src="email.svg" alt="Email icon" />
+                <LinkIcon href="mailto:hi@rlai.dev" src="email.svg" alt="Email icon" />
+                <LinkIcon href="resume.pdf" src="resume.svg" alt="Résumé icon" />
             </nav>
         </section>
         <div className={styles.belowFold}>
